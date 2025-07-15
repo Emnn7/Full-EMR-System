@@ -57,19 +57,21 @@ The system is designed for LAN deployment within hospital premises:
 1. Clone the Repository
 git clone https://github.com/yourusername/Full-EMR-System.git
 cd local-farm-ecommerce
-2. Install Dependencies
+
+3. Install Dependencies
 # Frontend
 cd emr-frontend
 npm install
-
 # Backend
 cd ../emr-backend
 npm install
+
 3. Set Up Environment Variables
 In /emr-backend/.env, add the following:
 PORT=3000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
-4. Start the Application
+
+5. Start the Application
 # From the project root using concurrently
 npm run dev
