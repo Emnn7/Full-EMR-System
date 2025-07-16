@@ -1,0 +1,280 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f7f7;
+  transition: background-color 0.3s ease;
+}
+
+/* Login Page */
+.login-container {
+  width: 100%;
+  max-width: 350px;
+  margin: 100px auto;
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.login-container input,
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.login-container input:focus,
+.login-container button:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.login-container button {
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #2980b9;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background: #34495e;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  transition: transform 0.3s ease;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: #2980b9;
+}
+
+/* Navbar */
+.navbar {
+  background: #2c3e50;
+  color: #fff;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar .nav-items {
+  display: flex;
+}
+
+.navbar .nav-items a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-items a:hover {
+  color: #3498db;
+}
+
+/* Style for the Logout button inside Navbar */
+.navbar button {
+  background-color: #3498db; /* Blue color matching your theme */
+  color: #fff; /* White text */
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar button:hover {
+  /* Slightly darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+.navbar button:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+.navbar button:active {
+  background-color: #3498db; /* Maintain the same blue background on click */
+  transform: scale(1); /* Reset the scaling effect after click */
+}
+
+
+/* Main Content */
+.dashboard-container {
+  display: flex;
+}
+
+.main-content {
+  margin-left: 240px;
+  width: calc(100% - 240px);
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-container:hover .main-content {
+  transform: scale(1.01);
+}
+
+.dashboard-welcome h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #34495e;
+}
+
+.dashboard-welcome p {
+  font-size: 18px;
+  color: #7f8c8d;
+}
+
+/* Data Table */
+.MuiDataGrid-root {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.MuiDataGrid-columnHeaderTitle {
+  color: #34495e;
+}
+
+.MuiDataGrid-cell {
+  color: #34495e;
+}
+
+.MuiDataGrid-toolbarContainer {
+  background-color: #3498db;
+  color: white;
+}
+
+.MuiDataGrid-footerContainer {
+  background-color: #3498db;
+  color: white;
+}
+
+.MuiDataGrid-menuIcon {
+  color: #3498db;
+}
+/* Styling for Prescriptions Table */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.data-table th,
+.data-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  color: #34495e;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: #3498db;
+  color: white;
+}
+
+.data-table td {
+  color: #34495e;
+}
+
+.data-table tr:hover {
+  background-color: #ecf0f1;
+}
+
+/* Optional: Style for responsive view (adjust table for small screens) */
+@media (max-width: 768px) {
+  .data-table {
+    font-size: 14px; /* Adjust font size on smaller screens */
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 8px; /* Reduce padding for small screens */
+  }
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+    transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .navbar {
+    padding: 12px;
+  }
+
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .login-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px;
+  }
+
+  .sidebar ul li {
+    font-size: 16px;
+  }
+}

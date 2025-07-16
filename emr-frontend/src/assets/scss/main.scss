@@ -1,0 +1,77 @@
+// Variables
+@import './variable';
+
+// Mixins
+@import 'mixins';
+
+// Base styles
+@import 'base';
+
+// Components
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 240px;
+  margin-top: 64px;
+}
+
+// Calendar overrides
+.rbc-calendar {
+  min-height: 600px;
+}
+
+.rbc-event {
+  padding: 2px 5px;
+}
+
+// Form styles
+.form-section {
+  margin-bottom: 30px;
+}
+
+.form-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+// Table styles
+.data-table {
+  margin-top: 20px;
+}
+
+// Utility classes
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mt-1 { margin-top: 8px; }
+.mt-2 { margin-top: 16px; }
+.mt-3 { margin-top: 24px; }
+.mb-1 { margin-bottom: 8px; }
+.mb-2 { margin-bottom: 16px; }
+.mb-3 { margin-bottom: 24px; }
+.ml-1 { margin-left: 8px; }
+.ml-2 { margin-left: 16px; }
+.ml-3 { margin-left: 24px; }
+.mr-1 { margin-right: 8px; }
+.mr-2 { margin-right: 16px; }
+.mr-3 { margin-right: 24px; }
+
+// Responsive adjustments
+@media (max-width: 900px) {
+  .main-content {
+    margin-left: 0;
+  }
+}
