@@ -28,6 +28,15 @@ Full-EMR-System/
 ├── config/ # Database and environment configurations
 └── README.md
 
+## ⚙️ Prerequisites
+Before running the system, ensure you have installed:
+
+- Node.js >= 18.x  
+- npm >= 9.x  
+- MongoDB >= 6.x  
+
+---
+
 
 ## 🚀 Deployment (Local Network Setup)
 The system is designed for LAN deployment within hospital premises:
@@ -75,3 +84,8 @@ JWT_SECRET=your_jwt_secret_key
 5. Start the Application
 # From the project root using concurrently
 npm run dev
+
+
+📌 Notes
+
+This system is a fully functional, client-ready EMR platform designed for deployment within hospital networks. All core features have been implemented for production use.
