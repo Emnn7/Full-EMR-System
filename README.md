@@ -49,7 +49,7 @@ This system enables hospitals to manage patients, staff, and medical processes e
 
 🖥️ Dashboard
 
-![Dashboard](./dashboard.png)
+![Dashboard](./admin-dashboard.png)
 
 👤 User Management
 
