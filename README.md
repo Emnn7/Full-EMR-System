@@ -53,15 +53,18 @@ This system enables hospitals to manage patients, staff, and medical processes e
 
 👤 User Management
 
-![User Management](./user-management.png)
+![User Management](./User-management-table.png)
 
 📅 Appointments
 
-![Appointments](./appointments.png)
+![Appointments](./appointment.png)
 
-🧪 Lab Records
+🧪 Lab 
 
-![Lab Records](./lab.png)
+![Lab](./lab.png)
+
+Doctor Actions
+![Doctor Actions](./doctor-action.png)
 
 ---
 
